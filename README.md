@@ -68,21 +68,21 @@
 
 ## 📁 Структура проекта
 lab_04/
-├── server.py # Сервер с поддержкой пагинации
-├── coordinator.py # Балансировщик нагрузки (отказоустойчивость)
-├── client.py # Клиент с запросом страниц
-├── generate_certs.py # Генерация сертификатов (PKI)
-├── generate_key.py # Генерация ключа Fernet
-├── encryption_key.txt # Ключ симметричного шифрования
-├── certs/ # Сертификаты X.509
-│ ├── ca-key.pem
-│ ├── ca-cert.pem
-│ ├── server-key.pem
-│ ├── server-cert.pem
-│ ├── client-key.pem
-│ └── client-cert.pem
-├── requirements.txt # Зависимости Python
-└── venv/ # Виртуальное окружение
+├── server.py                # Сервер с поддержкой пагинации
+├── coordinator.py           # Балансировщик нагрузки (отказоустойчивость)
+├── client.py                # Клиент с запросом страниц
+├── generate_certs.py        # Генерация сертификатов (PKI)
+├── generate_key.py          # Генерация ключа Fernet
+├── encryption_key.txt       # Ключ симметричного шифрования
+├── requirements.txt         # Зависимости Python
+├── certs/                   # Сертификаты X.509
+│   ├── ca-key.pem           # Приватный ключ центра сертификации
+│   ├── ca-cert.pem          # Сертификат центра сертификации
+│   ├── server-key.pem       # Приватный ключ сервера
+│   ├── server-cert.pem      # Сертификат сервера
+│   ├── client-key.pem       # Приватный ключ клиента
+│   └── client-cert.pem      # Сертификат клиента
+└── venv/                    # Виртуальное окружение Python
 
 
 ---
